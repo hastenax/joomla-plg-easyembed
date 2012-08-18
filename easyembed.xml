@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension type="plugin" version="1.6" group="content">
+<name>Content - Easy Embed Video</name>
+<author>Vladislav Galyanin</author>
+<creationDate>March 2011</creationDate>
+<copyright>Copyright 2006-2012 Union D</copyright>
+<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+<authorEmail>v.galyanin@gmail.com</authorEmail>
+<authorUrl>http://union-d.ru/</authorUrl>
+<version>2.0</version>
+<description><![CDATA[
+	Easiest way to get embed videos on your Joomla<sup>TM</sup> Site<br /><br />
+	Just paste link to
+	
+	<ul>
+	<li>youtube</li>
+	<li>google video</li>
+	<li>ustream.tv</li>
+	<li>myspace</li>
+	<li>vimeo</li>
+	<li>break</li>
+	<li>mpora</li>
+	<li>youku.com</li>
+	<li>ku6.com</li>
+	<li>56.com</li>	
+	</ul>
+
+	Inspired on Easiertube plugin for Joomla<sup>TM</sup> 1.5, rewrited for Joomla<sup>TM</sup> 1.6, 1.7 and then 2.5, and some refactoring done.<br/>
+	If normal link must be placed without autoreplacement to video player insert "{noembedvideo}" text without quotes into article.
+	]]></description>
+<files>
+	<filename plugin="easyembed">easyembed.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+</files>
+<languages>
+	<language tag="en-GB">languages/en-GB/en-GB.plg_content_easyembed.ini</language>
+</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="fpwidth" type="text" default="400" label="FRONT_PAGE_WIDTH" description="WIDTH_OF_VIDEO_ON_FRONTPAGE"></field>
+				<field name="fpheight" type="text" default="300" label="FRONT_PAGE_HEIGHT" description="HEIGHT_OF_VIDEO_ON_FRONTPAGE"></field>
+				<field name="width" type="text" default="425" label="NOT_FRONT_PAGE_WIDTH" description="WIDTH_OF_VIDEO_ON_CONTENT_PAGES"></field>
+				<field name="height" type="text" default="350" label="NOT_FRONT_PAGE_HEIGHT" description="HEIGHT_OF_VIDEO_ON_CONTENT_PAGES"></field>
+
+				<field name="youtube" type="list" default="YES" label="YOUTUBE" description="ENABLE_YOUTUBE">
+				<option value="no">NO</option>
+				<option value="YES">YES</option>
+				</field>
+				<field name="google" type="list" default="YES" label="GOOGLE" description="ENABLE_GOOGLE">
+				<option value="no">NO</option>
+				<option value="YES">YES</option>
+				</field>
+				<field name="vimeo" type="list" default="YES" label="VIMEO" description="ENABLE_VIMEO">
+				<option value="no">NO</option>
+				<option value="YES">YES</option>
+				</field>
+				<field name="ustream" type="list" default="YES" label="USTREAM" description="ENABLE_USTREAM">
+				<option value="no">NO</option>
+				<option value="YES">YES</option>
+				</field>
+				<field name="myspace" type="list" default="YES" label="MYSPACE" description="ENABLE_MYSPACE">
+				<option value="no">NO</option>
+				<option value="YES">YES</option>
+				</field>
+				<field name="mybreak" type="list" default="YES" label="MYBREAK" description="ENABLE_MYBREAK">
+				<option value="no">NO</option>
+				<option value="YES">YES</option>
+				</field>
+				<field name="mpora" type="list" default="YES" label="MPORA" description="ENABLE_MPORA">
+				<option value="no">NO</option>
+				<option value="YES">YES</option>
+				</field>
+				<field name="youku" type="list" default="YES" label="YOUKU" description="ENABLE_YOUKU">
+					<option value="no">NO</option>
+					<option value="YES">YES</option>
+				</field>
+				<field name="fivtysix" type="list" default="YES" label="FIVTYSIX" description="ENABLE_FIVTYSIX">
+					<option value="no">NO</option>
+					<option value="YES">YES</option>
+				</field>
+				<field name="kusix" type="list" default="YES" label="KUSIX" description="ENABLE_KUSIX">
+					<option value="no">NO</option>
+					<option value="YES">YES</option>
+				</field>
+				<field name="kick" type="list" default="YES" label="KICK" description="ENABLE_KICK">
+					<option value="no">NO</option>
+					<option value="YES">YES</option>
+				</field>
+				<field name="meta" type="list" default="YES" label="META" description="ENABLE_META">
+					<option value="no">NO</option>
+					<option value="YES">YES</option>
+				</field>
+				<field name="daily" type="list" default="YES" label="DAILY" description="ENABLE_DAILY">
+					<option value="no">NO</option>
+					<option value="YES">YES</option>
+				</field>
+				<field name="veoh" type="list" default="YES" label="VEOH" description="ENABLE_VEOH">
+					<option value="no">NO</option>
+					<option value="YES">YES</option>
+				</field>
+                                <field name="video123" type="list" default="YES" label="VIDEO123" description="ENABLE_VIDEO123">
+					<option value="no">NO</option>
+					<option value="YES">YES</option>
+				</field>     
+				<field name="copyrights" type="list" default="YES" label="COPYRIGHTS" description="ENABLE_PLUGIN_COPYRIGHTS">
+					<option value="no">NO</option>
+					<option value="YES">YES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
