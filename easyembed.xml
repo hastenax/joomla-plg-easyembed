@@ -30,7 +30,7 @@
 	</ul>
 
 	Inspired on Easiertube plugin for Joomla<sup>TM</sup> 1.5, rewrited for Joomla<sup>TM</sup> 1.6, 1.7 and then 2.5, and some refactoring done.<br/>
-	If normal link must be placed without autoreplacement to video player insert "{noembedvideo}" text without quotes into article.
+	If you don't need autoreplacement to video player insert "{noembedvideo}" text without quotes inside the article.
 	]]></description>
 <files>
 	<filename plugin="easyembed">easyembed.php</filename>
