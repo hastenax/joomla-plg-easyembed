@@ -22,7 +22,11 @@
 	<li>mpora</li>
 	<li>youku.com</li>
 	<li>ku6.com</li>
-	<li>56.com</li>	
+	<li>56.com</li>
+        <li>kickstarter.com</li>
+        <li>metacafe.com</li>
+        <li>dailymotion.com</li>
+        <li>veoh.com</li>
 	</ul>
 
 	Inspired on Easiertube plugin for Joomla<sup>TM</sup> 1.5, rewrited for Joomla<sup>TM</sup> 1.6, 1.7 and then 2.5, and some refactoring done.<br/>
