@@ -8,7 +8,11 @@ require_once dirname(__FILE__).'/helper.php';
 class plgContentEasyembed extends JPlugin
 {
 	public function onContentPrepare($context, &$article, &$params, $limitstart)
-	{ 
+	{
+		$option = JRequest::getCmd('option', '');
+        	if ($option === 'com_search' or $option === "com_finder") {
+        	return;
+        	}  
 		$oldtext = $article->text;
 		
 		if (strpos($article->text, '{noembedvideo}') !== FALSE)
